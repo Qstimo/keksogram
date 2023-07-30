@@ -1,4 +1,4 @@
-import {getRandomArrayElement, randomInteger } from './util.js';
+import { getRandomArrayElement, randomInteger } from './util.js';
 
 const descriptions = [
   'Летний чил на югах. #тай #отдых #лето #чил #travel #travelgram #summergram #chill',
@@ -38,7 +38,7 @@ const createComment = (index) => ({
 });
 
 
-const  createPicture = (index) => ({
+const createPicture = (index) => ({
 
   id: index,
   avatar: `photos/${index}.jpg`,
@@ -51,6 +51,6 @@ const  createPicture = (index) => ({
 
 });
 
-export {createPicture};
+export { createPicture };
 
 

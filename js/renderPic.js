@@ -3,10 +3,12 @@ import { getPictures } from './source.js';
 const userComentsTemplate = document.querySelector('#picture').content;
 const userCommentsFragment = document.createDocumentFragment();
 const picturesBlock = document.querySelector('.pictures');
+
+
 const userPicture = getPictures();
 
 
-userPicture.forEach((item)=>{
+userPicture.forEach((item) => {
   const element = userComentsTemplate.cloneNode(true);
   element.querySelector('img').src = item.avatar;
   element.querySelector('.picture__likes').textContent = item.likes;
