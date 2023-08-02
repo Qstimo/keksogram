@@ -1,6 +1,5 @@
 import { getPictures } from './source.js';
-import './renderPic.js';
-import './renderBigPic.js';
+import { renderPictures } from './renderPic.js';
 
-// console.log(getPictures());
+renderPictures(getPictures());
 
