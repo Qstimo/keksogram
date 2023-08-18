@@ -19,6 +19,7 @@ const bigPictureCreate = ({ avatar, likes, descriptions, comments }) => {
 function onEscKeyDown(evt) {
   if (evt.key === 'Escape') {
     evt.preventDefault();
+    // eslint-disable-next-line no-use-before-define
     hiddenBigPicture();
   }
 }
@@ -29,8 +30,6 @@ const hiddenBigPicture = () => {
   document.removeEventListener('keydown', onEscKeyDown);
 
 };
-
-
 
 
 const commentConstructor = ({ avatar, message, name }) => {
